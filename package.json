@@ -1,0 +1,20 @@
+{
+  "name": "DevOpsNotes",
+  "version": "1.0.0",
+  "description": "The Notes for Solent's New Third-year DevOps Course",
+  "main": "index.js",
+  "repository": "git@github.com:joeappleton18/dev-ops-notes.git",
+  "author": "Joe Appleton",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "deploy": "yarn vuepress build && git add -A && git commit -m 'bot commit' && git push --force"
+  },
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "@sentry/react": "^7.23.0",
+    "@sentry/tracing": "^7.23.0"
+  }
+}
